@@ -1,0 +1,24 @@
+.registrat{
+	position: fixed;
+	top: 100px;
+    left: 250px;
+    color: #fff;
+	font-family: 'Amatic SC', sans-serif; 
+	font-size: 45px;
+	font-weight: lighter;
+	padding: 300px 400px;
+	background: #9ba4b3;
+	display: inline-block;
+	border-radius: 10px;
+	z-index: 5;
+}
+.back{
+	position: absolute;
+	top: 20px;
+	left: 1150px;
+}
+.name{
+position: absolute;
+text-align: center;
+top: 20px;
+}

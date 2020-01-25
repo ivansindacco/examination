@@ -1,0 +1,54 @@
+<div class="container">
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="https://vk.com/">VK</a></li>
+            <li><a href="https://www.instagram.com/">Instagram</a></li>
+            <li><a routerLink="registration">Регистрация</a></li>
+            <li><a routerLink="login">Вход</a></li>
+            <li><a routerLink="#">wewe</a></li>
+
+        </ul>
+    </nav>
+</div>
+<header>
+    <div class="header">
+        <span>Приюты для животных</span>
+        <p class="name">Наша организация поможет вам обрести или передать питомца в надёжные руки</p>
+
+    </div>
+</header>
+
+<div class="block">
+    <h1 class="parttwo"> Для чего мы созданы?</h1>
+    <p class="partthree"> Наша компания предлагает вам площадку,где можно приобрести или отдать своё животное.<br>
+        С нашей помощью вам не придётся тратить свои нервы и своё время<br>
+        Также, мы собрали все приюты для животных по Москве.<br>
+                        Присоединайтесь! <br>
+        <br>
+    </p>
+</div>
+<div class="develop">
+    <h1> ВАЖНАЯ ЧАСТЬ</h1>
+    <p> Мы постарались максимально упростить работу проекта, поэтому вам необходима регистрация только при том случае, если вы хотите отдать животное. <br>
+        Вам достаточно просто оставить свой мобильный номер и район, где вы территоритально находитесь.
+        <br>
+    </p>
+
+</div>
+<div class="about-us">
+    <h1> О нас </h1>
+    <p>Мы молодая команда, которая хочет решить проблему популяции бездомных животных в Москве.<br>
+    <p>
+</div>
+<div class="regist">
+    <a routerLink="registration">Приступить</a>
+
+
+</div>
+
+
+<ng-container
+*ngIf="!this.user || this.user.number == ''; else showNumber"
+>
+<a (click)="openDialog()" class="enter" class="f"> вход </a>
+</ng-container>
